@@ -33,13 +33,16 @@ static char cAnswerFileName[32U];
 static unsigned char getNumberOfQuestions(void);
 static void askUserName(void);
 static isAnswerValid(int);
+static unsigned char timeElapsedMessage(unsigned long ulEndTime);
+static void processExam(unsigned char queLeft, FILE *qFilePtr, FILE *ansFilePtr);
+
 
 int main(void)
 {
 	unsigned char ucNumOfQuestions = 0;
 	FILE *fQueFilePtr = NULL;
 	FILE *fAnsFilePtr = NULL;
-	unsigned char ucMarks = 0;
+	
 
 	// Purge data at input buffers
 	fflush(stdin);
@@ -67,68 +70,8 @@ int main(void)
 	if( NULL != fQueFilePtr )
 	{
 		
-		unsigned char ucNumOfQueLeft = 0;
-		char cFileChar = 0;
-		ucNumOfQueLeft = ucNumOfQuestions;
-
-		while((cFileChar = getc(fQueFilePtr)) != EOF )
-		{
-			printf("%c",cFileChar);
-		}
+		processExam(ucNumOfQuestions,fQueFilePtr,fAnsFilePtr);
 		
-		// Look Until All Questions are Completed and EOF is reached 
-
-		while(ucNumOfQueLeft && ((cFileChar = getc(fQueFilePtr)) != EOF ))
-		{
-			char answer = 0;
-			
-			// When the character matches the End Question Character
-
-			if( QUESTION_END_CHAR == cFileChar )
-			{
-				ucNumOfQueLeft--;
-
-				// Detect the key hit on the keypad by User for answer value
-				while(1)
-				{
-					//Purge the data at input buffers
-					fflush(stdin);
-
-					if (kbhit())
-					{
-						// Get User Input for Answer Options
-						answer = getch();
-						printf("%c",answer);
-						if(TRUE == isAnswerValid(answer))
-						{
-							prinf("\n\tRE-ENTER ANSWER : ");
-							continue;
-						}
-
-						// Store the answer received from the user
-						fprintf(fAnsFilePtr,"(%d)\t%c", ucNumOfQuestions - ucNumOfQueLeft, answer);
-						break;
-					}
-
-					//printf("Number of Questions Left: %d\n", ucNumOfQueLeft);
-				}
-
-				cFileChar = getc(fQueFilePtr);
-
-				if ( (answer | LOWER_CASE)==(cFileChar | LOWER_CASE))
-				{
-					++ucMarks;
-					fprintf(fAnsFilePtr,"\tRight\n");
-				}
-				else fprintf(fAnsFilePtr,"\tWrong\n");
-			}
-			else
-			{
-				// IF not Question End, Print each character one by one
-				printf("%c",cFileChar);
-			}	
-		}
-
 		// Close the Question File before exiting the Application
 		fclose(fQueFilePtr);
 
@@ -142,6 +85,108 @@ int main(void)
 	// Close the Answer File Pointer before Submitting the Quiz
 	fclose(fAnsFilePtr);
 	return 0;
+}
+
+static void processExam(unsigned char queLeft, FILE *qFilePtr, FILE *ansFilePtr)
+{
+	unsigned char ucMarks = 0;
+	unsigned char quesCount = 1;
+	char cFileChar = 0;
+	char answer = 0;
+	unsigned long ulCurrTime;
+	unsigned long ulEndTime = 0;
+
+	// Store Current Time COunt
+	ulStartTime = ulCurrTime = time(NULL);
+
+	// Calculate the maximum time allowed
+	ulEndTime = ulStartTime + ( 60 * TIME_PER_QUE * queLeft );
+
+
+	// Look Until All Questions are Completed and EOF is reached 
+
+	while((cFileChar = getc(qFilePtr)) != EOF )
+	{
+		char answer = 0;
+
+		
+		// When the character matches the End Question Character
+
+		if( QUESTION_END_CHAR == cFileChar )
+		{
+			queLeft--;
+
+			// Read the Current time
+			if (timeElapsedMessage(ulEndTime)==TRUE) break;
+
+			// Detect the key hit on the keypad by User for answer value
+			while(1)
+			{
+				//Purge the data at input buffers
+				fflush(stdin);
+
+				if (kbhit())
+				{
+					// Get User Input for Answer Options
+					answer = getch();
+					printf("%c",answer);
+					if(TRUE == isAnswerValid(answer))
+					{
+						prinf("\n\tRE-ENTER ANSWER : ");
+						continue;
+					}
+
+					// Store the answer received from the user
+					fprintf(ansFilePtr,"(%d)\t%c", quesCount++, answer);
+					break;
+				}
+			}
+
+			if (timeElapsedMessage(ulEndTime)==TRUE) break;
+
+			cFileChar = getc(qFilePtr);
+
+			if ( (answer | LOWER_CASE)==(cFileChar | LOWER_CASE))
+			{
+				++ucMarks;
+				fprintf(ansFilePtr,"\tRight\n");
+			}
+			else fprintf(ansFilePtr,"\tWrong\n");
+
+			if(queLeft)
+			{
+				ulCurrTime = time(NULL);
+				printf("\n\n\t********************************\n");
+				printf("\tQuestions Remained : %d\n",queLeft);
+				printf("\tTime Remained : %d minute ",( ulEndTime - ulCurrTime )/60);
+				printf("%d second\n",(ulEndTime - ulCurrTime )%60);
+				printf("\t**********************************\n");
+			}
+		}
+		else
+		{
+			// IF not Question End, Print each character one by one
+			printf("%c",cFileChar);
+		}	
+	}
+}
+		
+static unsigned char timeElapsedMessage(unsigned long ulEndTime)
+{
+	unsigned long ulCurrTime = 0;
+
+	//read current time
+	ulCurrTime = time(NULL);
+
+	// Compare it with the maximum time allocated for the exam
+	if(ulCurrTime>ulEndTime)
+	{
+		printf("\n\n\t**********************************\n");
+		printf("\nTime Elapsed\n");
+		printf("\t***********************************\n");
+		return TRUE;
+	}
+	return FALSE;
 }
 
 static unsigned char getNumberOfQuestions(void)
