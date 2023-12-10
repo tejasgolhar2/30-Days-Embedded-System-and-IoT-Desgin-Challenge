@@ -1,0 +1,491 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ul",
+				"ulStartTime"
+			],
+			[
+				"tim",
+				"timeElapsedMessage"
+			],
+			[
+				"un",
+				"ucNumOfQuestions"
+			],
+			[
+				"f",
+				"fAnsFilePtr"
+			],
+			[
+				"c",
+				"cFileChar"
+			],
+			[
+				"ch",
+				"check"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"str",
+				"string2"
+			],
+			[
+				"a",
+				"array"
+			],
+			[
+				"va",
+				"val2"
+			],
+			[
+				"val",
+				"val2"
+			],
+			[
+				"na",
+				"name1"
+			],
+			[
+				"name",
+				"name1"
+			],
+			[
+				"stri",
+				"string.h"
+			],
+			[
+				"s",
+				"surname_len"
+			],
+			[
+				"sur",
+				"surname_len"
+			],
+			[
+				"nam",
+				"name_len"
+			],
+			[
+				"st",
+				"string2"
+			],
+			[
+				"fo",
+				"found"
+			],
+			[
+				"p",
+				"printf\tprintf …"
+			],
+			[
+				"prin",
+				"printf\tprintf …"
+			],
+			[
+				"prt",
+				"partition"
+			],
+			[
+				"pri",
+				"printf\tprintf …"
+			],
+			[
+				"E",
+				"Elements"
+			],
+			[
+				"ma",
+				"main\tmain()"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C & C++ CMD.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C & C++ CMD.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C & C++ CMD.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/CmdCPP.sublime-build",
+					""
+				],
+				[
+					"Packages/User/CmdCPP.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/CmdCPP.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: CDATA"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"Build With: C++ Super"
+			],
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 144.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Codes/30-Days-Embedded-System-and-IoT-Design-Challenge/main.c",
+		"/E/Codes/30-Days-Embedded-System-and-IoT-Design-Challenge/MCQ_Application.dev",
+		"/E/Code Material/C_programming_basic-to-advanced/7. Structures/Concept Explained/02_object_initialization_in_strucutures.c",
+		"/E/Code Material/C_programming_basic-to-advanced/7. Structures/Concept Explained/01_declaring_structure_objects.c",
+		"/E/Code Material/C_programming_basic-to-advanced/7. Structures/Concept Explained/00_structure_declaration.c",
+		"/E/Code Material/C_programming_basic-to-advanced/2. Strings/1. Concept Explained/00_definition_and_initialization.c",
+		"/E/Code Material/Data_Structures_and_Algorithms_in_C_and_Cpp/Programming Problems/01_pr.cpp",
+		"/E/Code Material/Data_Structures_and_Algorithms_in_C_and_Cpp/08. Arrays/2. Searching/00_linear_search.cpp",
+		"/E/Code Material/C_programming_basic-to-advanced/5. Functions/1. Concept Explained/09_replacement_for_switch_statement.c",
+		"/E/Code Material/C_programming_basic-to-advanced/5. Functions/1. Concept Explained/08_callback_function.c",
+		"/E/Code Material/C_programming_basic-to-advanced/5. Functions/1. Concept Explained/07_function_pointer.c",
+		"/E/Code Material/C_programming_basic-to-advanced/5. Functions/1. Concept Explained/06_returning_pointer_from_function.c",
+		"/E/Code Material/C_programming_basic-to-advanced/5. Functions/1. Concept Explained/04_passing_string_as_argument.c",
+		"/E/Code Material/C_programming_basic-to-advanced/5. Functions/1. Concept Explained/05_return_string_from_function.c",
+		"/E/Code Material/C_programming_basic-to-advanced/4. Pointers/1. Concept Explained/08_wild_pointer.c",
+		"/E/Code Material/C_programming_basic-to-advanced/5. Functions/1. Concept Explained/02_call_by_address.c",
+		"/E/Code Material/C_programming_basic-to-advanced/5. Functions/1. Concept Explained/03_passing_array_as_argument.c",
+		"/E/Code Material/C_programming_basic-to-advanced/5. Functions/1. Concept Explained/01_call_by_value.c",
+		"/E/Code Material/C_programming_basic-to-advanced/4. Pointers/1. Concept Explained/07_dangling_pointer.c",
+		"/E/Code Material/C_programming_basic-to-advanced/Test Codes/Basics/fibon.cpp",
+		"/E/Code Material/C_programming_basic-to-advanced/5. Functions/2. Problems Solved/00_Play_with_function_returntype.c",
+		"/E/Code Material/C_programming_basic-to-advanced/5. Functions/1. Concept Explained/00_implicit_function_declaration.c",
+		"/E/Code Material/Data_Structures_and_Algorithms_in_C_and_Cpp/08. Arrays/3. Sorting/00_Bubble_Sort_algorithm.c",
+		"/E/Code Material/Data_Structures_and_Algorithms_in_C_and_Cpp/08. Arrays/3. Sorting/02_Selection_Sort.cpp",
+		"/E/Code Material/Data_Structures_and_Algorithms_in_C_and_Cpp/08. Arrays/3. Sorting/01_insertion_sort_algorithm.cpp",
+		"/E/Code Material/C_programming_basic-to-advanced/4. Pointers/1. Concept Explained/06_null_pointer.c",
+		"/E/Code Material/C_programming_basic-to-advanced/4. Pointers/1. Concept Explained/05_void_pointer.c",
+		"/E/Code Material/C_programming_basic-to-advanced/4. Pointers/1. Concept Explained/04_subtraction_arithmetic_on_pointers.c",
+		"/E/Code Material/C_programming_basic-to-advanced/4. Pointers/2. Problems Solved/00_modify_value_stored_by_ptr_to_ptr.c",
+		"/E/Code Material/C_programming_basic-to-advanced/4. Pointers/1. Concept Explained/03_addition_arithmetics_on_pointers.c",
+		"/E/Code Material/C_programming_basic-to-advanced/1. Basics/4. Unformatted Output/02_use_case_of_puts.c",
+		"/E/Code Material/C_programming_basic-to-advanced/1. Basics/4. Unformatted Output/01_use_case_putch.c",
+		"/E/Code Material/C_programming_basic-to-advanced/1. Basics/4. Unformatted Output/00_use_case_of_putchar.c",
+		"/E/Code Material/C_programming_basic-to-advanced/1. Basics/3. Unformatted Input/03_use_case_of_gets_function.c",
+		"/E/Code Material/C_programming_basic-to-advanced/1. Basics/3. Unformatted Input/02_use_case_of_getche_function.c",
+		"/E/Code Material/C_programming_basic-to-advanced/1. Basics/3. Unformatted Input/01_use_case_of_getch_funtion.c",
+		"/E/Code Material/C_programming_basic-to-advanced/1. Basics/3. Unformatted Input/00_use_case_of_getchar_function.c",
+		"/E/Code Material/C_programming_basic-to-advanced/1. Basics/2. Formatted Output/01_formatted_input_printf_testing.c",
+		"/E/Code Material/C_programming_basic-to-advanced/1. Basics/2. Formatted Output/00_printf_function.c",
+		"/E/Code Material/C_programming_basic-to-advanced/1. Basics/1. Formatted Input/00_scanf_function.c",
+		"/E/Code Material/Data_Structures_and_Algorithms_in_C_and_Cpp/09. Pointers/01_null_pointer_and_value_access.cpp",
+		"/E/Code Material/Data_Structures_and_Algorithms_in_C_and_Cpp/09. Pointers/00_intro_to_pointers.cpp",
+		"/C/Users/tejas/AppData/Roaming/Sublime Text 3/Packages/User/cpp_snippet.sublime-snippet",
+		"/E/Code Material/C_programming_basic-to-advanced/4. Pointers/01_pointer_assignment.c",
+		"/E/Code Material/C_programming_basic-to-advanced/4. Pointers/00_Pointers_Intro.c",
+		"/E/Code Material/C_programming_basic-to-advanced/2. Strings/1. Concept Explained/01_reading_string_using_scanf.c",
+		"/E/Code Material/C_programming_basic-to-advanced/4. Pointers/00_Pointers_Introduction.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/2. Problems Solved/03_convert_uppercase_string_to_lowercase.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/2. Problems Solved/02_reverse_a_given_string.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/1. Basics/1. Formatted Input/00_scanf_function.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/1. Basics/3. Unformatted Input/02_use_case_of_getche_function.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/1. Basics/3. Unformatted Input/01_use_case_of_getch_funtion.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/1. Concept Explained/08_comparison_of_two_strings_without_strcmp.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/1. Concept Explained/07_comparison_of_two_strings_using_strcmp.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/3. Arrays/2. Problems Solved/1 D Arrays/00_sum_and_avg_of_student.cpp",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/3. Arrays/2. Problems Solved/2 D Arrays/04_multiplication_of_matrices.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/3. Arrays/2. Problems Solved/1 D Arrays/02_sum_of_two_arrays_into_third.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/3. Arrays/1. Concept Explained/04_runtime_initialization_of_a_2d_array.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/1. Concept Explained/06_string_concatenartion_without_function.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/1. Concept Explained/02_reading_string_using_gets.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/1. Concept Explained/05_string_concatenation_strcat.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/2. Problems Solved/01_program_to_find_length_of_the_string.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/04_printing_string_using_puts.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/03_printing_string_using_printf.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/01_reading_string_using_scanf.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/02_reading_string_using_gets.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Strings/00_definition_and_initialization.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/1. Basics/5. Strings/00_definition_and_initialization.c",
+		"/E/Encrypted/Visual Studio Code/C_programming_basic-to-advanced/2. Arrays/2. Problems Solved/2 D Arrays/04_multiplication_of_matrices.c",
+		"/C/Users/tejas/AppData/Roaming/Sublime Merge/Packages/User/Preferences.sublime-settings",
+		"/E/Encrypted/Visual Studio Code/Data_Structures_and_Algorithms_in_C_and_Cpp/08. Arrays/Data Structure Operations/2. Searching/01_binary_search.cpp",
+		"/E/Encrypted/Sublime Text/Data Structures in C/Operators in C/00_arithmetic_operation_on_different_datatypes.c",
+		"/E/Encrypted/Sublime Text/Data Structures in C/Basics/use of_getch.c",
+		"/E/Encrypted/Sublime Text/Data Structures and Algorithms/1. Conditionals and Loops/00_compare_a_and_b.cpp",
+		"/E/Encrypted/Sublime Text/Data Structures and Algorithms/1. Conditionals and Loops/01_positive_or_negative_number.cpp",
+		"/E/Encrypted/Sublime Text/Data Structures and Algorithms/prime_number_or_not.cpp",
+		"/C/Users/tejas/OneDrive/Desktop/teja.cpp",
+		"/D/C++/Programming in Modern C++/01_const_sze_arary.cpp",
+		"/C/Users/tejas/Personal Folder/Sublime Text 3/hello.cpp",
+		"/D/C++/Programming in Modern C++/02_dynamic_array_location_allocation.c",
+		"/D/C++/Programming in Modern C++/01_const_sze_arary.c",
+		"/D/C++/Competitive Coding/Sublime Text_COmp Code/C++/outputf.in",
+		"/D/C++/Competitive Coding/Sublime Text_COmp Code/C++/inputf.in",
+		"/D/C++/Competitive Coding/Sublime Text_COmp Code/C++/First.cpp",
+		"/D/C++/Competitive Coding/Sublime Text_COmp Code/outputf.in",
+		"/D/C++/Competitive Coding/Sublime Text_COmp Code/inputf.in",
+		"/C/Users/tejas/AppData/Roaming/Sublime Text 3/Packages/User/C++ CompCode",
+		"/D/C++/Competitive Coding - SUBLIME/C++ Practice/outputf.in",
+		"/D/C++/Competitive Coding - SUBLIME/C++ Practice/inputf.in",
+		"/D/C++/Competitive Coding - SUBLIME/C++ Practice/Hello World.cpp",
+		"/C/Users/tejas/AppData/Roaming/Sublime Text 3/Packages/User/C++ Competitive.sublime-build",
+		"/D/C++/Competitive Coding - SUBLIME/C++ Practice/Hello Tejas.cpp",
+		"/C/Users/tejas/AppData/Roaming/Sublime Text 3/Packages/User/outputf.in",
+		"/C/Users/tejas/AppData/Roaming/Sublime Text 3/Packages/User/inputf.in",
+		"/D/C++/C++ Programming Course/Sublime text - hands_on/01_conditionals_hrnk_test.cpp",
+		"/D/C++/C++ Programming Course/Sublime text - hands_on/06_miscellaneous_operator.cpp",
+		"/D/C++/Competitive Coding - SUBLIME/outputf.txt",
+		"/D/C++/Competitive Coding - SUBLIME/inputf.txt",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/Searching Algorithms/02_binary_search.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/Searching Algorithms/01_linear_search.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/Sorting Algorithms/01_bubble_sort_algorithm.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/Stacks/stack_operation.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/01_bubble_sort_algorithm.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/05_heap_sort_algorithm.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/03_quick_sort_algorithm.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/02_insertion_sort_algorithm.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/05_heap_sort.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/bubble_sort_algorithm.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/selection_sort_algorithm.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/insertion_sort_algorithm.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Data Structure & Algorithms/quick_sort_algorithm.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/bubblesortalgorithm.c",
+		"/C/Users/tejas/AppData/Roaming/Sublime Text 3/Packages/User/C & C++ CMD.sublime-build",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Bubble Sorting Algorithm.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/BubbleSortingalgorithm.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Bubble Sort.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/outputf.in",
+		"/C/Users/tejas/AppData/Roaming/Sublime Text 3/Packages/User/CmdCPP.sublime-build",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/inputf.txt",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/inputf.in",
+		"/C/Users/tejas/OneDrive/Desktop/temp bubble.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Hello.c",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/Hello Tejas.c",
+		"/C/Users/tejas/AppData/Roaming/Sublime Text 3/Packages/User/C++ Super.sublime-build",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/main.cpp",
+		"/C/Users/tejas/AppData/Roaming/Sublime Text 3/Packages/User/C++ Super",
+		"/C/Users/tejas/OneDrive/Desktop/C++/Sublime text/outputf.txt",
+		"/C/Users/tejas/AppData/Roaming/Sublime Text 3/Packages/User/C++ 14"
+	],
+	"find":
+	{
+		"height": 40.8
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 209.6
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.Terminus":
+	{
+		"height": 32.0
+	},
+	"output.exec":
+	{
+		"height": 160.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/C & C++ CMD.sublime-build",
+	"project": "MCQ_Application.sublime-project",
+	"replace":
+	{
+		"height": 52.8
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 325.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

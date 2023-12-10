@@ -6,8 +6,10 @@
 */
 
 #include<stdio.h>
+#include<conio.h>
 #include<string.h>
 #include<stdlib.h>
+#include<time.h>
 
 #define LOWER_CASE ('a' ^ 'A')
 
@@ -57,7 +59,7 @@ int main(void)
 
 	// Open the User Answer File to store the answers of User
 	fAnsFilePtr = fopen(cAnswerFileName,FILE_OPEN_MODE_WRITE);
-	if(NULL==fAnsFilePtr)
+	if(fAnsFilePtr == NULL)
 	{
 		printf("Failure to Open the Answer File\n");
 		return 0;
@@ -67,7 +69,7 @@ int main(void)
 	// Open the Question file in Read Mode -- The below gives address of the file
 	fQueFilePtr = fopen(QUE_FILENAME, FILE_OPEN_MODE_READ);
 
-	if( NULL != fQueFilePtr )
+	if( fQueFilePtr != NULL )
 	{
 		
 		processExam(ucNumOfQuestions,fQueFilePtr,fAnsFilePtr);
@@ -81,7 +83,7 @@ int main(void)
 		printf("Failed to Open File\n");
 	}
 
-	fprintf(fAnsFilePtr,"\nMarks Obtained are: %d/%d",ucMarks,ucNumOfQuestions);
+	//fprintf(fAnsFilePtr,"\nMarks Obtained are: %d/%d",ucMarks,ucNumOfQuestions);
 	// Close the Answer File Pointer before Submitting the Quiz
 	fclose(fAnsFilePtr);
 	return 0;
@@ -93,7 +95,10 @@ static void processExam(unsigned char queLeft, FILE *qFilePtr, FILE *ansFilePtr)
 	unsigned char quesCount = 1;
 	char cFileChar = 0;
 	char answer = 0;
-	unsigned long ulCurrTime;
+
+	// Initialize the timers
+	unsigned long ulCurrTime = 0;
+	unsigned long ulStartTime = 0;
 	unsigned long ulEndTime = 0;
 
 	// Store Current Time COunt
@@ -130,10 +135,10 @@ static void processExam(unsigned char queLeft, FILE *qFilePtr, FILE *ansFilePtr)
 					// Get User Input for Answer Options
 					answer = getch();
 					printf("%c",answer);
-					if(TRUE == isAnswerValid(answer))
+					if(isAnswerValid(answer) == TRUE )
 					{
-						prinf("\n\tRE-ENTER ANSWER : ");
-						continue;
+						printf("\n\tRE-ENTER ANSWER : ");
+						//continue;
 					}
 
 					// Store the answer received from the user
@@ -144,6 +149,7 @@ static void processExam(unsigned char queLeft, FILE *qFilePtr, FILE *ansFilePtr)
 
 			if (timeElapsedMessage(ulEndTime)==TRUE) break;
 
+			// Check the correctness of the answer
 			cFileChar = getc(qFilePtr);
 
 			if ( (answer | LOWER_CASE)==(cFileChar | LOWER_CASE))
@@ -179,7 +185,7 @@ static unsigned char timeElapsedMessage(unsigned long ulEndTime)
 	ulCurrTime = time(NULL);
 
 	// Compare it with the maximum time allocated for the exam
-	if(ulCurrTime>ulEndTime)
+	if(ulCurrTime>=ulEndTime)
 	{
 		printf("\n\n\t**********************************\n");
 		printf("\nTime Elapsed\n");
@@ -199,7 +205,7 @@ static unsigned char getNumberOfQuestions(void)
 	//Open the file in Read Mode -- The below gives address of the file
 	fQueFilePtr = fopen(QUE_FILENAME, FILE_OPEN_MODE_READ);
 
-	if( NULL != fQueFilePtr )
+	if( fQueFilePtr != NULL )
 	{
 		// Loop through the file until its end is reached
 		while((cFileChar = getc(fQueFilePtr)) != EOF )
@@ -208,7 +214,6 @@ static unsigned char getNumberOfQuestions(void)
 			if(cFileChar == QUESTION_END_CHAR)
 			{
 				++ucNumOfQuestions;
-
 			}
 		}
 
@@ -232,9 +237,12 @@ static unsigned char getNumberOfQuestions(void)
 
 static void askUserName(void)
 {
+	char cUserName[32];
+
 	// Creting a file for storing answers from user
-	char *sAnswerFile = "_answer.txt";
-	printf("Enter your name: ")
+ 	char *sAnswerFile = "_answer.txt";
+	
+	printf("Enter your name: ");
 	gets(cUserName);
 
 	strcat(cAnswerFileName,cUserName);
